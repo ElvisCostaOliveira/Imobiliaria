@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <title>Adimo - Imobiliaria</title>
+</head>
+
+    <body>
+        
+        <!-- NAVBAR -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-b">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo da empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bbr" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="negocios.html">Negócios | </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Anuncie seu imóvel |</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Área do cliente |</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Menu</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="blue-bar text-white py-2">
+            ANUNCIE SEU IMÓVEL - RESIDENCIAL
+          </div>
+        <div class="text-image">
+            <img src="img/4.png" alt="Imagem do imóvel">
+            <div>
+                <p></p>
+                <h2>DESEJA VENDER OU ALUGAR O SEU IMÓVEL?</h2>
+                <p>ADIMO tem uma estrutura exclusiva para a intermediação da compra, venda e avaliação de imóveis comerciais. Apresenta ao comprador a oportunidade para adquirir um empreendimento ideal e proporciona ao vendedor à oportunidade de um bom negócio.</p>
+            </div>
+        </div>
+        <form>
+            <div>
+                <hr>
+                <h2 class="textBlue">Dados Pessoais</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" id="telefone" name="telefone" class="form-control" placeholder="Telefone Residencial" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" id="telComercial" name="telComercial" class="form-control" placeholder="Telefone Comercial" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço" required>
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" id="numero" name="numero" class="form-control" placeholder="Número" required>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" required>
+                    </div>
+                    <div class="col-md-2">
+                        <select id="estado" name="estado" class="form-control" required>
+                          <option value="">Estado</option>
+                          <option value="AC">Acre</option>
+                          <option value="AL">Alagoas</option>
+                          <option value="AP">Amapá</option>
+                          <option value="AM">Amazonas</option>
+                          <option value="BA">Bahia</option>
+                          <option value="CE">Ceará</option>
+                          <option value="DF">Distrito Federal</option>
+                          <option value="ES">Espírito Santo</option>
+                          <option value="GO">Goiás</option>
+                          <option value="MA">Maranhão</option>
+                          <option value="MT">Mato Grosso</option>
+                          <option value="MS">Mato Grosso do Sul</option>
+                          <option value="MG">Minas Gerais</option>
+                          <option value="PA">Pará</option>
+                          <option value="PB">Paraíba</option>
+                          <option value="PR">Paraná</option>
+                          <option value="PE">Pernambuco</option>
+                          <option value="PI">Piauí</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Rio Grande do Norte</option>
+                          <option value="RS">Rio Grande do Sul</option>
+                          <option value="RO">Rondônia</option>
+                          <option value="RR">Roraima</option>
+                          <option value="SC">Santa Catarina</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Sergipe</option>
+                          <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="CEP" name="CEP" class="form-control" placeholder="CEP" required>
+                      </div>
+                </div>
+            </div>      
+              <hr>
+            <div>
+                <h2 class="textBlue">Dados do Imóvel</h2>
+                <select id="tipo" name="tipo">
+                    <option value="">Tipo</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="terreno">Terreno</option>
+                    <option value="comercial">Comercial</option>
+                </select>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço" required>
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" id="numero" name="numero" class="form-control" placeholder="Número" required>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" required>
+                    </div>
+                    <div class="col-md-2">
+                        <select id="estado" name="estado" class="form-control" required>
+                          <option value="">Estado</option>
+                          <option value="AC">Acre</option>
+                          <option value="AL">Alagoas</option>
+                          <option value="AP">Amapá</option>
+                          <option value="AM">Amazonas</option>
+                          <option value="BA">Bahia</option>
+                          <option value="CE">Ceará</option>
+                          <option value="DF">Distrito Federal</option>
+                          <option value="ES">Espírito Santo</option>
+                          <option value="GO">Goiás</option>
+                          <option value="MA">Maranhão</option>
+                          <option value="MT">Mato Grosso</option>
+                          <option value="MS">Mato Grosso do Sul</option>
+                          <option value="MG">Minas Gerais</option>
+                          <option value="PA">Pará</option>
+                          <option value="PB">Paraíba</option>
+                          <option value="PR">Paraná</option>
+                          <option value="PE">Pernambuco</option>
+                          <option value="PI">Piauí</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Rio Grande do Norte</option>
+                          <option value="RS">Rio Grande do Sul</option>
+                          <option value="RO">Rondônia</option>
+                          <option value="RR">Roraima</option>
+                          <option value="SC">Santa Catarina</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Sergipe</option>
+                          <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="CEP" name="CEP" class="form-control" placeholder="CEP" required>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" id="qtdeDormitorio" name="nome" placeholder="Qtde de dormitorios" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="area" name="nome" placeholder="Área Total" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="valorVenda" name="nome" placeholder="Valor de Venda" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="valorLocacao" name="nome" placeholder="Valor de Locação" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <textarea id="descricao" name="descricao" rows="3" cols="90" placeholder="Mais detalhes:"></textarea>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="privacy-checkbox" class="form-check-input">
+                    <label for="privacy-checkbox" class="form-check-label">Ao informar meus dados, concordo com a <a href="#">Política de Privacidade</a></label>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block">ENVIAR</button>
+            </div>
+        </form>
+    </body>
+</html>
